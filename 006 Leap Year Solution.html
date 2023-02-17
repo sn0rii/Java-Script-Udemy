@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: rgb(8, 8, 8);
+        }
+    </style>
+</head>
+<body>
+    <script>
+            function isLeap(year) {
+
+                if (year % 4 === 0){
+                    if (year % 100 === 0){
+                        if (year % 400 === 0){
+                            return "Leap year."
+                        } else {
+                            return "Not leap year";
+                        }
+                    } else {
+                    return "Leap year";
+                    }
+                } else {
+                return "Not leap year";
+                }
+
+            }
+
+            isLeap(2000);
+    </script>
+</body>
+</html>
